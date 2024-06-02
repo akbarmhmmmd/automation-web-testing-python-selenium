@@ -4,7 +4,7 @@ from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 import time
 import sys
-sys.path.append("D:/Automation Testing/Selenium-Python---First-Project/Library")
+sys.path.append("D:/Automation Testing/automation-web-testing-selenium/Library")
 
 driver = webdriver.Chrome()
 driver.maximize_window()
@@ -23,6 +23,6 @@ def playGame():
         number = driver.find_element(By.XPATH, f'//*[@class="grid x5"]//div[text()="{i}"]')
         number.click()
         
-    time.sleep(1)
+    time.sleep(3)
     
     driver.quit()
